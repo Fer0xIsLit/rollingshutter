@@ -5,8 +5,6 @@ fps = 50
 Writer = animation.writers['ffmpeg']
 writer = Writer(fps=fps, bitrate=100000)
 
-style.use('thing')
-
 def transition(a, b, t):
     if t >= 1:
         return b
