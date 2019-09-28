@@ -1,9 +1,5 @@
 from matplotlib import pyplot as plt, style, animation
 import numpy as np
-plt.rcParams['animation.ffmpeg_path'] = 'D:/ffmpeg/ffmpeg/bin/ffmpeg.exe'
-fps = 50
-Writer = animation.writers['ffmpeg']
-writer = Writer(fps=fps, bitrate=100000)
 
 def transition(a, b, t):
     if t >= 1:
